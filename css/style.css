@@ -11,6 +11,14 @@
     }
 }
 
+.header {
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    background-color: #0A2640;
+}
+
 body {
     background-color: #fff;
 }
@@ -80,7 +88,7 @@ body {
 
 .welcome {
     width: 100%;
-    margin-top: -100px;
+    margin-top: -120px;
     background-color: #0A2640;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +99,11 @@ body {
     opacity: 0;
     transform: translateY(100px);
     transition: all 2s ease-in-out;
-    padding-top: 180px;
+    padding-top: 130px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    gap: 30px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -433,11 +445,12 @@ body {
 @media(max-width: 1000px) {
     .main__title {
         font-size: 28px;
-        line-height: 43px;
+        line-height: 44px;
     }
 
     .main__desc {
         font-size: 16px;
+        line-height: 30px;
     }
 
     .hero-1 {
